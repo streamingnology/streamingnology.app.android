@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/controllerWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_playback_background"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/play_pause_ff_rew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton android:id="@id/exo_rew"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/exo_player_play"
+            style="@style/ExoMediaButton.Rewind"/>
+
+        <ImageButton
+            android:id="@id/exo_player_play"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_play_arrow_white_36dp" />
+
+        <ImageButton
+            android:id="@id/exo_player_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_pause_white_36dp" />
+
+        <ImageButton android:id="@id/exo_ffwd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_toRightOf="@id/exo_player_pause"
+            style="@style/ExoMediaButton.FastForward"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/play_pause_ff_rew">
+        <TextView
+            android:id="@id/exo_player_position"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:lines="1"
+            android:text="@string/default_video_time"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/default_video_view_time_text_size" />
+
+        <com.google.android.exoplayer2.ui.DefaultTimeBar
+            android:id="@id/exo_player_progress"
+            style="?android:attr/seekBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:maxHeight="3dp"
+            android:maxWidth="3dp" />
+
+        <TextView
+            android:id="@id/exo_player_duration"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:lines="1"
+            android:text="@string/default_video_time"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/default_video_view_time_text_size" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top">
+            <ImageButton
+                android:id="@id/exo_player_enter_fullscreen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_fullscreen_white_36dp" />
+
+            <ImageButton
+                android:id="@id/exo_player_exit_fullscreen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_fullscreen_exit_white_36dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

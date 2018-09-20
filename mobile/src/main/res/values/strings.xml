@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">SnyMediaPlayer</string>
+    <string name="title_search">Search</string>
+    <string name="title_fileexplorer">Explorer</string>
+    <string name="title_setting">Setting</string>
+    <string name="sny_get_dir_failed">Sorry,Failed to get content.</string>
+    <string name="sny_invalid_dir_content">Sorry,Invalid directory</string>
+    <string name="sny_get_mediainfo_failed">Sorry,Failed to get mediainfo</string>
+    <string name="sny_invalid_mediainfo">Sorry,Invalid media</string>
+    <string name="sny_select_server_first">First of all, Please Select one MediaServer.</string>
+
+    <string name="admob_app_id">ca-app-pub-0143974411186089~5304168232</string>
+    <string name="banner_ad_unit_id">ca-app-pub-0143974411186089/2388739599</string>
+
+    <string name="unexpected_intent_action">Unexpected intent action</string>
+    <string name="error_generic">Playback failed</string>
+    <string name="error_unrecognized_abr_algorithm">Unrecognized ABR algorithm</string>
+    <string name="error_drm_not_supported">Protected content not supported on API levels below 18</string>
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="error_no_decoder">This device does not provide a decoder for </string>
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder </string>
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+    <string name="error_instantiating_decoder">Unable to instantiate decoder</string>
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+    <string name="sample_list_load_error">One or more sample lists failed to load</string>
+    <string name="ima_not_loaded">Playing sample without ads, as the IMA extension was not loaded</string>
+    <string name="download_start_error">Failed to start download</string>
+    <string name="download_playlist_unsupported">This demo app does not support downloading playlists</string>
+    <string name="download_drm_unsupported">This demo app does not support downloading protected content</string>
+    <string name="download_scheme_unsupported">This demo app only supports downloading http streams</string>
+    <string name="download_ads_unsupported">IMA does not support offline ads</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="license_sny_mediaplayer">This is an open source software under MIT license.\n
+        1,Download SnyMediaServer from www.streamingnology.com to your PC and run it.\n
+        2,Make sure this device and SnyMediaServer connect to the same router.\n
+        3,Goback to Search page, App will automatically find SnyMediaServer.\n
+        If app can\'t find SnyMediaServer, you can try turnoff you device\'s WI-FI and turn WI-FI on\n
+    </string>
+    <string name="help"></string>
+</resources>
